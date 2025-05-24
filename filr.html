@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanisha Bhardwaj | Portfolio</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <h1 class="fade-in">Tanisha Bhardwaj</h1>
+        <p class="slide-in">Web Developer | Designer | Programmer</p>
+        <a href="#about" class="btn flip-btn">Explore</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content fade-in">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer and software engineer...</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content fade-in">
+        <h2>Projects</h2>
+        <div class="project slide-in">
+            <h3>Task Manager Website</h3>
+            <p>A dynamic task management web app with an attractive UI.</p>
+        </div>
+        <div class="project slide-in">
+            <h3>Health Awareness Website</h3>
+            <p>Provides health tips and resources for better well-being.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+   
+    <section id="contact" class="content">
+        <h2>Contact Me</h2>
+        <p>Have a question or want to work together? Send me a message!</p>
+        <form class="contact-form">
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <script>
+        // Button Flip Effect
+        document.querySelectorAll('.flip-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('flipped');
+            });
+        });
+    </script>
+
+</body>
+</html>
